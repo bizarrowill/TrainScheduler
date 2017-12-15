@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Train Scheduler</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" id="align">
+            <h1>Train Scheduler</h1>
+            <p>A Detail Oriented Schedule Management System</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel panel-default" id="pan2">
+            <div class="panel-heading" id="train">Add Train</div>
+            <form>
+                <div class="form-group">
+                    <label for="name">Train Name</label>
+                    <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="destination" class="form-control" id="destination" placeholder="Enter destination" name="destination">
+                </div>
+                <div class="form-group">
+                    <label for="train_time">First Train Time (HH:mm - military time)</label>
+                    <input type="train_time" class="form-control" id="trainTime" placeholder="Enter time" name="trainTime">
+                </div>
+                <div class="form-group">
+                    <label for="rate">Rate</label>
+                    <input type="text" class="form-control" id="pwd" placeholder="Enter rate" name="rate">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default" id="pan">
+            <div class="panel-heading" id="current">Current Train</div>
+            <div class="panel-body">
+                <table class="table table-hover">
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
